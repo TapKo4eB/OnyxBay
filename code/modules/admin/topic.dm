@@ -928,7 +928,7 @@
 					to_chat(usr, SPAN("warning","Moderators can only job tempban up to [config.mod_tempban_max] minutes!"))
 					return
 				if(mins >= 525600) mins = 525599
-				var/reason = sanitize(input(usr,"Reason?","reason","Жriefer") as text|null)
+				var/reason = sanitize(input(usr,"Reason?","reason","Griefer") as text|null)
 				if(!reason)
 					return
 				var/ban_everywhere = FALSE
@@ -971,7 +971,7 @@
 			if("No")
 				if(!check_rights(R_BAN))
 					return
-				var/reason = sanitize(input(usr,"Reason?","reason","Жriefer") as text|null)
+				var/reason = sanitize(input(usr,"Reason?","reason","Griefer") as text|null)
 				if(!reason)
 					return
 				var/ban_everywhere = FALSE
